@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8)
+project( VehicleDetectionLib )
+include_directories(lib/include)
+add_subdirectory(lib)
+option(WTH_TESTS "build test" ON)
+
+if(WITH_TESTS)
+	message("it will add unit test")
+endif()
+#find_package( OpenCV REQUIRED )
+#add_executable( DisplayImage main.cpp )
+#target_link_libraries( DisplayImage ${OpenCV_LIBS} )
